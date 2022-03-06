@@ -11,6 +11,42 @@ html {
     scroll-behavior: smooth;
 }
 
+.caixa {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .caixa {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .caixa {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .caixa {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .caixa {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .caixa {
+        max-width: 1320px;
+    }
+}
+
 #primeira-sessao {
     background-image: url('background.png');
     background-size: 100%;
@@ -39,10 +75,6 @@ html {
     width: 100%;
 }
 
-.conteudo {
-    margin-left: 200px;
-}
-
 #segunda-sessao {
     background-color: #333333;
 }
@@ -51,7 +83,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 24px;
 }
 
@@ -89,6 +121,7 @@ html {
 .secao-principal {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     height: 401px;
     width: 636px;
 }
@@ -184,11 +217,18 @@ html {
 }
 
 #terceira-sessao {
-    background-image: url('background-sessao-3.png');
+    /* background-image: url('background-sessao-3.png'); */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #333333;
     gap: 60px;
+}
+
+.terceira-sessao {
+    margin-bottom: 60px;
 }
 
 .terceira-sessao-titulo {
@@ -232,7 +272,7 @@ html {
     display: flex;
     gap: 40px;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .terceira-sessao-formulario-submeter {
@@ -262,9 +302,101 @@ html {
     display: flex;
     align-items: end;
     justify-content: end;
-    /* -webkit-mask-image: linear-gradient(90deg, #000 60%, transparent); */
-    /* -webkit-mask-image: linear-gradient(to right rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), linear-gradient(to left rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
--webkit-mask-size: 100% 50%;
--webkit-mask-repeat: no-repeat;
--webkit-mask-position: left top, left bottom; */
+    margin-top: 15px;
+}
+
+#quarta-sessao {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-bottom: 94px;
+}
+
+.fotos {
+    padding-bottom: 118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.cargo {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #898989;
+    text-align: center;
+}
+
+#footer {
+    background: radial-gradient(circle at right center, #AD00FF 20%, transparent), radial-gradient(circle at left center, #00D1FF 20%, transparent);
+}
+
+.footer-barra-diagonal {
+    background-image: url('footer shape.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.footer-cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-titulo {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-logo {
+    align-self: center;
+    justify-self: start;
+}
+
+.footer-corpo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-formas-de-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cooperation {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-texto {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.footer-direitos-reservados {
+    display: flex;
+    justify-content: center;
 }
